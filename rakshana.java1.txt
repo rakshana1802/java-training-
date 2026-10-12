@@ -1,0 +1,51 @@
+rakshana.java1
+
+public class hello {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
+
+
+rakshana.java2
+
+
+public class studentdetails {
+    public static void main(String[] args) {
+        String name = "rakshana";
+        int age = 20;
+        float mark = 95.0f;
+        char grade = 'O';
+        boolean passed = true;
+
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(mark);
+        System.out.println(grade);
+        System.out.println(passed);
+    }
+}
+
+
+rakshana.java3
+
+import java.util.Scanner;
+
+public class AddNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first number:");
+        int a = sc.nextInt();
+
+        System.out.println("Enter second number:");
+        int b = sc.nextInt();
+
+        int sum = a + b;
+
+        System.out.println("Sum = " + sum);
+
+        sc.close();
+    }
+}
