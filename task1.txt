@@ -1,0 +1,236 @@
+1.evenodd
+
+
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int n = sc.nextInt();
+
+        String result = (n % 2 == 0) ? "Even" : "Odd";
+        System.out.println(result);
+
+        sc.close();
+    }
+}
+
+
+
+
+
+2.greater number
+
+import java.util.Scanner;
+
+public class GreaterNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter two integers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        String result = (a > b) ? "a is greater"
+                      : (a < b) ? "b is greater"
+                      : "Equal";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+
+3.positive or negative
+
+import java.util.Scanner;
+
+public class PositiveNegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int n = sc.nextInt();
+
+        String result = (n > 0) ? "Positive"
+                      : (n < 0) ? "Negative"
+                      : "Zero";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+
+
+4.eligible age
+
+
+
+import java.util.Scanner;
+
+public class EligibleAge {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        String result = (age >= 18) ? "Eligible" : "Not Eligible";
+        System.out.println(result);
+
+        sc.close();
+    }
+}
+
+
+
+
+5.divisibility check
+
+
+
+import java.util.Scanner;
+
+public class DivisibilityCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int n = sc.nextInt();
+
+        String result = (n % 3 == 0 && n % 5 == 0)
+                      ? "Divisible by Both"
+                      : "Not Divisible by Both";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+6.biggest of three
+
+
+import java.util.Scanner;
+
+public class BiggestOfThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter three integers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int biggest = (a >= b && a >= c) ? a
+                    : (b >= c) ? b : c;
+
+        System.out.println("Biggest number = " + biggest);
+        sc.close();
+    }
+}
+
+
+
+
+7.last digit is even
+
+
+import java.util.Scanner;
+
+public class LastDigitEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        int n = sc.nextInt();
+
+        String result = (n % 10 == 0 || n % 2 == 0)
+                      ? "Yes" : "No";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+8.student result
+
+
+import java.util.Scanner;
+
+public class StudentResult {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter three subject marks: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        String result = (a >= 35 && b >= 35 && c >= 35)
+                      ? "Pass" : "Fail";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+
+9.free delivery
+
+
+
+import java.util.Scanner;
+
+public class FreeDelivery {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter order amount: ");
+        double amount = sc.nextDouble();
+
+        System.out.print("Premium member (true/false): ");
+        boolean premium = sc.nextBoolean();
+
+        String result = (amount >= 1000 || premium)
+                      ? "Free Delivery" : "Delivery Charges Apply";
+
+        System.out.println(result);
+        sc.close();
+    }
+}
+
+
+
+10.discount calculator
+
+
+import java.util.Scanner;
+
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter purchase amount: ");
+        double amount = sc.nextDouble();
+
+        double finalAmount = (amount >= 2000)
+                           ? amount - (amount * 0.10)
+                           : amount;
+
+        System.out.println("Final amount = " + finalAmount);
+        sc.close();
+    }
+}
